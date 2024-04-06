@@ -1,0 +1,50 @@
+{
+  "name": "module-fed",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "start": "turbo start",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "npx @biomejs/biome format --write \"**/*.{ts,tsx,md}\"",
+    "format:apply": "npx @biomejs/biome check --apply apps --no-errors-on-unmatched",
+    "format:ci": "npx @biomejs/biome ci apps",
+    "check:format:lint": "npx @biomejs/biome check apps --files-ignore-unknown=true  --no-errors-on-unmatched"
+  },
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/preset-react": "latest",
+    "@biomejs/biome": "1.6.3",
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "@types/react": "^18.2.73",
+    "@types/react-dom": "^18.2.23",
+    "application-a": "^1.0.0",
+    "babel-loader": "latest",
+    "camel-case": "^5.0.0",
+    "concurrently": "^5.1.0",
+    "html-webpack-plugin": "latest",
+    "prettier": "^3.2.5",
+    "serve": "latest",
+    "ts-loader": "^9.5.1",
+    "turbo": "latest",
+    "webpack": "5.27.2",
+    "webpack-cli": "latest"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@8.19.4",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "@module-federation/runtime": "^0.1.1",
+    "@swc/cli": "^0.3.10",
+    "@swc/core": "^1.4.11",
+    "@swc/helpers": "^0.5.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

@@ -1,0 +1,9 @@
+[submodule "apps/a"]
+	path = apps/a
+	url = git@github.com:tarungarg/modfed-a.git
+[submodule "apps/b"]
+	path = apps/b
+	url = git@github.com:tarungarg/modfed-b.git
+[submodule "apps/lib"]
+	path = apps/lib
+	url = git@github.com:tarungarg/modfed-lib.git
