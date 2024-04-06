@@ -95,3 +95,7 @@ Learn more about the power of Turborepo:
 # Submodule
 git submodule add git@github.com:tarungarg/modfed-a.git ./apps/a
 git submodule add git@github.com:tarungarg/modfed-b.git ./apps/b
+
+
+# play submodules
+git submodule foreach 'git checkout -b feat/post-config'
